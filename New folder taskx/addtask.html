@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اضافه مهام التاسكات</title>
+    <link rel="stylesheet" href="tasks.css">
+</head>
+<body>
+    <div dir="rtl" class="crud">
+        <div class="head">
+            <h1>اضافه مهام التاسكات</h1>
+        </div>
+        <div class="gruob">
+            <div class="input-box">
+                <input type="text" id="Name_subject" placeholder="اسم الماده">
+                <input type="text" id="Name_Doctor" placeholder="اسم الدكتور">
+                <input type="text" id="Name_task" placeholder="اسم التاسك">
+            </div>
+            <div class="input-box2">
+                <input type="number" id="timeData" placeholder="ميعاد تسليم التاسك">
+                <input type="text" id="todayName" placeholder="اليوم">
+            </div>
+            <div class="button-create">
+                <button class="btn" id="btnproduct">اضافه</button>
+                <button class="btn" id="UpDate">تعديل</button>
+                <input type="search" id="Search" onkeyup="Search()" placeholder="بحث من خلال الدكتور ....">
+            </div>
+        </div>
+        <div id="deleteAll">
+        </div>
+        <div class="container">
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>اسم الماده</th>
+                    <th>اسم الدكتور</th>
+                    <th>اسم التاسك</th>
+                    <th>ميعاد التلسيم</th>
+                    <th>يوم</th>
+                    <th>تعديل</th>
+                    <th>حذف</th>
+                </tr>
+                <tbody id="show">
+                    <!-- <tr>
+                        <td>0</td>
+                        <td>Zeyad</td>
+                        <td>20</td>
+                        <td>Mansoura</td>
+                        <td>010123456789</td>
+                        <td>25632145</td>
+                        <td>Session</td>
+                        <td><button id="Update">Update</button></td>
+                        <td><button id="Delete">Delete</button></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="main5task.js"></script>
+</body>
+</html>

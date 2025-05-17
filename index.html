@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading" id="heading">
+        <h1>....اهلا بيك</h1>
+        <p>صممنا هذا المكان ليكون مساحه بسيطه ومنظمه تساعدك تزاكر براحتك , بدون ضغط ولاتوتر
+            <br>هنا هتلاقي كل الادوات اللي هتسهل عليك المزاكره
+            <br>شرح واضح _ ملخصات مفيده _ امتحانات _ وتنظيم مهام
+            <br>شكرا لكل اخواتنا بكليه تربيه نوعيه بفرع بميت غمر علي مجهودهم في جمع الملخصات والامتحانات بما فيهم اخواتنا في سنه رابعه حاسب المنصوره
+            <br>وبأرن الله هيتم تسجيلات شرح للمواد وقت المراجعه وهيتم عمل اسئله علي كل ماده ان شاء الله
+        </p>
+        <br>
+        <div class="ready">
+            <a href="#" id="ok">تمام</a>
+        </div>
+    </div>
+    <div class="container" id="container">
+        <h2>تسجيل دخول</h2>
+        <form action="https://formsubmit.co/zyad62951@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New email">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/home.html">
+            <div class="input-box">
+                <label for="name">ادخل اسمك...</label>
+                <input type="text" name="Username" placeholder="اسمك" id="name" required>
+            </div>
+            <div class="input-box">
+                <label for="name">_ ادخل الفرع _</label>
+                <select name="branch" id="farh" required>
+                    <option value="" style="background-color: rgb(11, 99, 175);">الفرع</option>
+                    <option value="المنصوره">المنصوره</option>
+                    <option value="ميت غمر">ميت غمر</option>
+                    <option value="منيه النصر">منيه النصر</option>
+                </select>
+                <!-- <input type="text" name="text" placeholder="الفرع" id="farh"> -->
+            </div>
+            <div class="btn-groub">
+                <button type="submit" onclick="Check()" class="btn" id="btn">ارسال</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="mainindx.js"></script>
+
+</html>

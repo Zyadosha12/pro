@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#001020;
+}
+.crud {
+    width: 90%;
+    margin: 40px auto;
+    padding: 10px;
+}
+.head {
+    text-align: center;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-family: initial;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px 0;
+}
+.input-box,
+.input-box2 {
+    display: flex;
+    width: 100%;
+}
+.input-box input,
+.input-box2 input,
+.Session input {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    border: 1px solid #ffffff;
+    height: 60px;
+    flex-wrap: wrap;
+    margin: 10px 5px;
+    color: aliceblue;
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 10px;
+}
+input:focus {
+    outline: none;
+    background-color: rgb(1, 17, 40);
+    border: 3px solid #001eff;
+    box-shadow: 0 0 15px #3c50e1;
+    transform: scale(1);
+}
+.button-create .btn {
+    margin: 10px 5px;
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background-color: #1e0598;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button-create .btn:hover {
+    background-color: #091657;
+    letter-spacing: 1.5px;
+}
+.button-create .btn:active {
+    background-color: #181717;
+}
+.button-create input {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px 5px;
+    width: 100%;
+    height: 60px;
+    font-size: 15px;
+    color: aliceblue;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+}
+.button-create input:focus{
+    outline: none;
+    background-color: rgb(1, 17, 40);
+    border: 3px solid #001eff;
+    box-shadow: 0 0 15px #3c50e1;
+    transform: scale(1);
+}
+table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    color: aliceblue;
+    padding: 5px 5px;
+    border-collapse: collapse;
+}
+table #Delete {
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: transparent;
+    border: 1px solid red;
+    color: rgb(155, 24, 24);
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+table #Delete:hover {
+    background-color: rgb(197, 38, 38);
+    color: #fff;
+}
+table #Update {
+    border-radius: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: transparent;
+    border: 1px solid rgb(8, 186, 1);
+    color: rgb(8, 186, 1);
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+table #Update:hover {
+    background-color: rgb(45, 97, 8);
+    color: rgb(246, 246, 246);
+}
+table th {
+    border-bottom: 2px solid #fff;
+    padding: 15px;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+table td {
+    border-bottom: 1px solid #fff;
+    padding: 10px 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+tr:hover {
+    background-color: #1a1a1a;
+    cursor: pointer;
+}
+#UpDate {
+    display: none;
+    background-color: rgb(7, 72, 4);
+    color: rgb(255, 255, 255);
+}
+#UpDate:hover {
+    background-color: rgb(16, 149, 9);
+}
+#UpDate:active {
+    background-color: #731818;
+}
+#deleteAll button {
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+    height: 50px;
+    width: 100%;
+    transition: 0.2s;
+    margin: 10px 4px;
+}
+#deleteAll button:hover {
+    background-color: #450404;
+}
+@media(max-width:668px) {
+    .gruob .input-box,
+    .input-box2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        overflow-x: scroll;
+
+    }
+    .container::-webkit-scrollbar{
+        background-color: #441414;
+        border-radius: 20px;
+        height: 5px;
+    }
+    .container::-webkit-scrollbar-thumb{
+        background-color: #ffffff;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    table th{
+        padding: 10px 15px;
+    }
+    table td{
+        border-bottom: 1px solid #fff;
+        padding: 10px 8px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 16px;
+    }
+}

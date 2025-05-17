@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السكاشن والحاضرات</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #001020;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container_section {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .container_section a {
+            margin: 20px 0;
+            text-decoration: none;
+            text-align: center;
+            color: aliceblue;
+            border: 1px solid #fff;
+            padding: 20px 30px;
+            border-radius: 35px;
+            font-size: 20px;
+            transition: 0.2s;
+            font-weight: 900;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .container_section a:hover {
+            background-color: rgb(255, 255, 255);
+            color: #001020;
+            transform: scale(1.1);
+        }
+        .container_section .exit {
+            background-color: red;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container_section">
+        <a href="lecture.html">محاضرات</a>
+        <a href="setion.html">سكاشن</a>
+    </div>
+</body>
+</html>
